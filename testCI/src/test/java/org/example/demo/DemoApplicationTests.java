@@ -19,7 +19,7 @@ class DemoApplicationTests {
     void contextLoads() {
         // This test will fail if the application context can't load
         // which it can't do without a database
-        System.out.println("Application context loaded successfully.");
+        System.out.println("Application context loaded successfully ! ");
     }
 
     @Test
