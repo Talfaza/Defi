@@ -5,11 +5,9 @@ on:
     branches:
       - 'spring/**'
     paths:
-      - 'src/main/java/**'
-      - 'src/main/resources/**'
-      - 'src/test/java/**'
-      - 'src/test/resources/**'
-      - 'pom.xml'
+      - '**.java'
+      - '**/pom.xml'
+      - '**/*.properties'
 
 jobs:
   build-and-create-pr:
@@ -44,11 +42,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('testCI/pom.xml') }} 
           restore-keys: |
             ${{ runner.os }}-maven-
 
       - name: Build with Maven
+        working-directory: ./testCI 
         env:
           SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/testdb
           SPRING_DATASOURCE_USERNAME: runner
@@ -74,3 +73,5 @@ jobs:
           else
             echo "Pull request for $BRANCH_NAME already exists (PR #$existing_pr)."
           fi
+
+
