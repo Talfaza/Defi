@@ -18,7 +18,7 @@ describe("Counter", async function () {
     );
   });
 
-  it("The sum of the Increment events should match the current value", async function () {
+  it("The sum of the Increment events should match the current val", async function () {
     const counter = await viem.deployContract("Counter");
     const deploymentBlockNumber = await publicClient.getBlockNumber();
 
