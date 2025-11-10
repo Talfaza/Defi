@@ -12,7 +12,9 @@ on:
 jobs:
   build-and-create-pr:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read       # To read the repo contents (checkout)
+      pull-requests: write # To create the pull request
     services:
       postgres:
         image: postgres:14
@@ -55,6 +57,7 @@ jobs:
         run: mvn clean install
 
       - name: Create Pull Request
+      
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_NAME: ${{ github.ref_name }}
