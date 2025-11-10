@@ -14,7 +14,9 @@ on:
 jobs:
   build-and-create-pr:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read       # To read the repo contents (checkout)
+      pull-requests: write # To create the pull request
     steps:
       - name: Check out code
         uses: actions/checkout@v4
