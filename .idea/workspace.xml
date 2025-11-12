@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="JPA+DB+PROPERTIES">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/DefiBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dd.pub" beforeDir="false" />
+    <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/spring.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/spring.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,10 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -127,7 +128,7 @@
       <updated>1762939898811</updated>
       <workItem from="1762939900170" duration="2968000" />
       <workItem from="1762966027705" duration="2647000" />
-      <workItem from="1762968708924" duration="3849000" />
+      <workItem from="1762968708924" duration="4181000" />
     </task>
     <task id="LOCAL-00001" summary="JPA+DB+PROPERTIES">
       <option name="closed" value="true" />
@@ -153,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762976928640</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JPA+DB+PROPERTIES">
+      <option name="closed" value="true" />
+      <created>1762977359660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762977359660</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie">
+      <option name="closed" value="true" />
+      <created>1762977417746</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762977417746</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JPA+DB+PROPERTIES" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPA+DB+PROPERTIES" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie" />
   </component>
 </project>
