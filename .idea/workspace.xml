@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/spring.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/spring.yml" afterDir="false" />
-    </list>
+    <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="dj khaled" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +126,7 @@
       <updated>1762939898811</updated>
       <workItem from="1762939900170" duration="2968000" />
       <workItem from="1762966027705" duration="2647000" />
-      <workItem from="1762968708924" duration="4181000" />
+      <workItem from="1762968708924" duration="4493000" />
     </task>
     <task id="LOCAL-00001" summary="JPA+DB+PROPERTIES">
       <option name="closed" value="true" />
@@ -170,7 +168,31 @@
       <option name="project" value="LOCAL" />
       <updated>1762977417746</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dj khaled">
+      <option name="closed" value="true" />
+      <created>1762977688370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762977688370</updated>
+    </task>
+    <task id="LOCAL-00007" summary="dj khaled">
+      <option name="closed" value="true" />
+      <created>1762977705729</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762977705729</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dj khaled">
+      <option name="closed" value="true" />
+      <created>1762977935379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762977935379</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JPA+DB+PROPERTIES" />
     <MESSAGE value="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/spring/barbie' into spring/barbie" />
+    <MESSAGE value="dj khaled" />
+    <option name="LAST_COMMIT_MESSAGE" value="dj khaled" />
   </component>
 </project>
