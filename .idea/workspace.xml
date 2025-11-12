@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Defi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/controllers/AlertController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/controllers/ClinicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/controllers/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/controllers/PaymentRequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/Alert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/AlertHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/Clinic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/PaymentHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/entities/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/repositories/AlertHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/repositories/AlertRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/repositories/ClinicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/repositories/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/repositories/PaymentHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/repositories/PaymentRequestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/services/AlertService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/services/ClinicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/services/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/services/PaymentRequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/spring.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/spring.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/minimalspring/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/minimalspring/MinimalSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/defi/DefiBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/minimalspring/MinimalSpringApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/defi/MinimalSpringApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/minimalspring/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/minimalspring/MinimalSpringApplication.class" beforeDir="false" />
-    </list>
+    <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="JPA+DB+PROPERTIES" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,11 +119,24 @@
       <updated>1762939898811</updated>
       <workItem from="1762939900170" duration="2968000" />
       <workItem from="1762966027705" duration="2647000" />
-      <workItem from="1762968708924" duration="679000" />
+      <workItem from="1762968708924" duration="1561000" />
     </task>
+    <task id="LOCAL-00001" summary="JPA+DB+PROPERTIES">
+      <option name="closed" value="true" />
+      <created>1762970251038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762970251039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JPA+DB+PROPERTIES" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA+DB+PROPERTIES" />
   </component>
 </project>
