@@ -3,7 +3,7 @@ name: Java CI with Maven and PostgreSQL
 on:
   push:
     branches:
-      - 'spring/**'
+      - '**'
     paths:
       - '**.java'
       - '**/pom.xml'
@@ -19,9 +19,10 @@ jobs:
       postgres:
         image: postgres:14
         env:
+          # --- SERVICE CREDENTIALS ---
           POSTGRES_USER: Nigga
           POSTGRES_PASSWORD: psps
-          POSTGRES_DB: defi_db
+          POSTGRES_DB: defi_db # The database that will be created
         ports:
           - 5432:5432
         options: >-
@@ -44,19 +45,19 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('testCI/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('pom.xml') }} # Assuming pom.xml is at the root
           restore-keys: |
             ${{ runner.os }}-maven-
 
       - name: Build with Maven
         env:
-          SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/testdb
-          SPRING_DATASOURCE_USERNAME: runner
-          SPRING_DATASOURCE_PASSWORD: password
+          # --- CORRECTION: MATCH SERVICE CREDENTIALS & USE 'postgres' HOSTNAME ---
+          SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/defi_db # Host is 'postgres'
+          SPRING_DATASOURCE_USERNAME: Nigga
+          SPRING_DATASOURCE_PASSWORD: psps
         run: mvn clean install
 
       - name: Create Pull Request
-
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_NAME: ${{ github.ref_name }}
