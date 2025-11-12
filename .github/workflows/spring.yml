@@ -1,4 +1,4 @@
-name: Java CI with Maven and PostgreSQL
+ame: Java CI with Maven and PostgreSQL
 
 on:
   push:
@@ -54,7 +54,7 @@ jobs:
           SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/testdb
           SPRING_DATASOURCE_USERNAME: runner
           SPRING_DATASOURCE_PASSWORD: password
-        run: mvn -U -e -X clean package -DskipTests D
+        run: mvn clean install
 
       - name: Create Pull Request
 
