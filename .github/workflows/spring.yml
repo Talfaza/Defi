@@ -25,8 +25,7 @@ jobs:
         ports:
           - 5432:5432
         options: >-
-          # FIX 1: The entire command is now correctly wrapped in double quotes 
-          # to prevent Docker from misinterpreting the flags (-d and -U).
+          # FIX: Command now correctly wrapped in quotes without extra comments.
           --health-cmd "pg_isready -d defi_db -U Nigga" 
           --health-interval 5s
           --health-timeout 5s
@@ -51,13 +50,11 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Wait for PostgreSQL to be ready
-        # FIX 2: This explicit wait step addresses the "Failed to load ApplicationContext"
-        # error by eliminating the race condition. It ensures the DB is fully initialized.
+        # FIX: Explicit wait to prevent the Spring application context loading failure.
         run: |
           echo "Waiting for PostgreSQL service to start..."
-          # The service is accessible via the service name 'postgres' on port 5432
           for i in 1 2 3 4 5; do
-            # Use 'nc -z' to check if the port is open (listening)
+            # Use 'nc -z' to check if the port is open on the service container
             nc -z postgres 5432 && echo "PostgreSQL is ready!" && exit 0
             echo "Waiting for PostgreSQL... ($i/5)"
             sleep 5
@@ -67,7 +64,7 @@ jobs:
 
       - name: Build with Maven
         env:
-          # Credentials are set to match the service container exactly.
+          # Credentials must match the service container exactly.
           SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/defi_db
           SPRING_DATASOURCE_USERNAME: Nigga
           SPRING_DATASOURCE_PASSWORD: psps
