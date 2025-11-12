@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="filtering">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +128,7 @@
       <updated>1762939898811</updated>
       <workItem from="1762939900170" duration="2968000" />
       <workItem from="1762966027705" duration="2647000" />
-      <workItem from="1762968708924" duration="4795000" />
+      <workItem from="1762968708924" duration="5694000" />
     </task>
     <task id="LOCAL-00001" summary="JPA+DB+PROPERTIES">
       <option name="closed" value="true" />
@@ -212,7 +210,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762978246353</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="filtering">
+      <option name="closed" value="true" />
+      <created>1762978419779</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762978419779</updated>
+    </task>
+    <task id="LOCAL-00012" summary="filtering">
+      <option name="closed" value="true" />
+      <created>1762978545101</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762978545101</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

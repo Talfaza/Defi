@@ -79,8 +79,20 @@
             <artifactId>lombok</artifactId>
             <scope>annotationProcessor</scope>
         </dependency>
+        <dependency>
+            <groupId>org.web3j</groupId>
+            <artifactId>core</artifactId>
+            <version>4.10.3</version>
+        </dependency>
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>web3j-repo</id>
+            <url>https://maven.web3j.io</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
