@@ -19,9 +19,9 @@ jobs:
       postgres:
         image: postgres:14
         env:
-          POSTGRES_USER: runner
-          POSTGRES_PASSWORD: password
-          POSTGRES_DB: testdb
+          POSTGRES_USER: Nigga
+          POSTGRES_PASSWORD: psps
+          POSTGRES_DB: defi_db
         ports:
           - 5432:5432
         options: >-
