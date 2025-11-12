@@ -49,11 +49,12 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Build with Maven
+        working-directory: ./testPipeline/testPipeline
         env:
           SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/testdb
           SPRING_DATASOURCE_USERNAME: runner
           SPRING_DATASOURCE_PASSWORD: password
-        run: mvn clean install
+        run: mvn -U -e -X clean package -DskipTests D
 
       - name: Create Pull Request
 
@@ -75,4 +76,3 @@ jobs:
           else
             echo "Pull request for $BRANCH_NAME already exists (PR #$existing_pr)."
           fi
-
