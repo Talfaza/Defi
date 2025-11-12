@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1de9597-6d73-4648-8dca-ff645952dfb1" name="Changes" comment="JPA+DB+PROPERTIES">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/spring.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/spring.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <updated>1762939898811</updated>
       <workItem from="1762939900170" duration="2968000" />
       <workItem from="1762966027705" duration="2647000" />
-      <workItem from="1762968708924" duration="2781000" />
+      <workItem from="1762968708924" duration="3393000" />
     </task>
     <task id="LOCAL-00001" summary="JPA+DB+PROPERTIES">
       <option name="closed" value="true" />
