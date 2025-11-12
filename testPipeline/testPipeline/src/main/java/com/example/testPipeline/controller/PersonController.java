@@ -1,4 +1,4 @@
-package com.example.testPipeline;
+package com.example.testPipeline.controller;
 
 import com.example.testPipeline.model.Person;
 import com.example.testPipeline.repo.PersonRepository;
