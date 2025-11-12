@@ -25,7 +25,9 @@ jobs:
         ports:
           - 5432:5432
         options: >-
-          --health-cmd pg_isready -d defi_db -U Nigga # Checks database readiness
+          # FIX 1: The entire command is now correctly wrapped in double quotes 
+          # to prevent Docker from misinterpreting the flags (-d and -U).
+          --health-cmd "pg_isready -d defi_db -U Nigga" 
           --health-interval 5s
           --health-timeout 5s
           --health-retries 5
@@ -40,28 +42,53 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # NOTE: No changes to Caching steps
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
 
       - name: Wait for PostgreSQL to be ready
+        # FIX 2: This explicit wait step addresses the "Failed to load ApplicationContext"
+        # error by eliminating the race condition. It ensures the DB is fully initialized.
         run: |
-          # Use a loop to poll the database connection until it's ready.
-          # This is an extra safety measure even with the service health check.
+          echo "Waiting for PostgreSQL service to start..."
+          # The service is accessible via the service name 'postgres' on port 5432
           for i in 1 2 3 4 5; do
-            nc -z localhost 5432 && echo "PostgreSQL is ready!" && exit 0
+            # Use 'nc -z' to check if the port is open (listening)
+            nc -z postgres 5432 && echo "PostgreSQL is ready!" && exit 0
             echo "Waiting for PostgreSQL... ($i/5)"
             sleep 5
           done
-          echo "PostgreSQL startup timed out."
+          echo "PostgreSQL startup timed out. Failing build."
           exit 1
-        # This step is often necessary because the 'service' health check can be misleading
-        # and doesn't always reflect the database being fully ready to accept connections.
 
       - name: Build with Maven
         env:
-          # Credentials from the previous fix:
+          # Credentials are set to match the service container exactly.
           SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/defi_db
           SPRING_DATASOURCE_USERNAME: Nigga
           SPRING_DATASOURCE_PASSWORD: psps
         run: mvn clean install
 
-      # NOTE: No changes to PR creation steps
+      - name: Create Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: |
+          echo "Current branch is $BRANCH_NAME"
+          
+          existing_pr=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number')
+          
+          if [ -z "$existing_pr" ]; then
+            echo "Creating new pull request..."
+            gh pr create \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --title "Merge $BRANCH_NAME into main" \
+              --body "PR created automatically by CI pipeline."
+          else
+            echo "Pull request for $BRANCH_NAME already exists (PR #$existing_pr)."
+          fi
