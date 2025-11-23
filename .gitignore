@@ -36,3 +36,7 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
+QUICKSTART.md
+PAYMENT_REQUEST_GUIDE.md
+IMPLEMENTATION_SUMMARY.md
